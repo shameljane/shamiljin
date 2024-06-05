@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.logo {
+    color: white;
+    font-style: italic;
+}
+nav a {
+    font-size: 20px;
+    padding: 10px 50px;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+    color: rgb(206, 69, 44);
+}
+#home {
+    min-height: 66vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(145, 4, 4);
+}
+.name {
+    font-size: 50px; 
+    color: white;
+}
+#about {
+    min-height: 66vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: black;
+}
+
+.pfp {
+    height: 130%;
+    border-radius: 100px;
+    border: 10px solid red;
+}
+
+.about-desc {
+    font-size: 30px;
+    color: white;
+    line-height: 2.5;
+    margin-left: 50px;
+}
+
+#services {
+    min-height: 66vh;
+    background-color: rgb(145, 4, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+
+}
+.container {
+    display: flex;
+    gap: 80px;
+    text-align: center;
+}
+.service-container {
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    border: 8px solid;
+}
+.title {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+footer {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    color: white;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+    nav a {
+        padding: 10px 30px;
+    }
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 580px) {
+    nav a {
+        padding: 10px;
+    }
+    .pfp {
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width: 690px) {
+    .container {
+        flex-direction: column;
+    }
+}
